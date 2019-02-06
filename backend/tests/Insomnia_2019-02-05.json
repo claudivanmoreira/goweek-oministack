@@ -1,0 +1,130 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-02-06T01:48:55.927Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"created": 1549415824859,
+			"description": "",
+			"modified": 1549415824859,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_6ba98a2a053447ff82d8f4fc67f72148",
+			"color": null,
+			"created": 1549415824924,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1549415824924,
+			"modified": 1549415824924,
+			"name": "New Environment",
+			"parentId": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_72d5233fca0c4b23b90369a7d8a51b2b",
+			"cookies": [],
+			"created": 1549415824939,
+			"modified": 1549415824938,
+			"name": "Default Jar",
+			"parentId": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_0f58bd71bdf743c99a7372381ea86527",
+			"authentication": {},
+			"body": {},
+			"created": 1549415878091,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549415878091,
+			"method": "GET",
+			"modified": 1549416737069,
+			"name": "Listar Tweets",
+			"parameters": [],
+			"parentId": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ tweet_api  }}/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_db09256e8668468f9d7e4937b91f1755",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"author\": \"Claudivan\",\n\t\"content\": \"Meu quarto tweeter!\"\n}"
+			},
+			"created": 1549415887157,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5352ad6372fb40d5b49aff6a670eac9d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1549415887157,
+			"method": "POST",
+			"modified": 1549417468985,
+			"name": "Criar Tweets",
+			"parameters": [],
+			"parentId": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ tweet_api  }}/tweets",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6597f322514a4826b90d7358bc2026a1",
+			"authentication": {},
+			"body": {},
+			"created": 1549416755950,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1549416755950,
+			"method": "POST",
+			"modified": 1549416780330,
+			"name": "Like Tweet",
+			"parameters": [],
+			"parentId": "wrk_18308e79724e4184a2d70d9798aea35e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ tweet_api  }}/likes/5c5a369269ed07177c84a2c7",
+			"_type": "request"
+		},
+		{
+			"_id": "env_c0abf3984ba7475b9ec2ac281df141b6",
+			"color": null,
+			"created": 1549415899159,
+			"data": {
+				"tweet_api": "http://localhost:3000"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1549415899159,
+			"modified": 1549416731496,
+			"name": "GoweekTwitter",
+			"parentId": "env_6ba98a2a053447ff82d8f4fc67f72148",
+			"_type": "environment"
+		}
+	]
+}
